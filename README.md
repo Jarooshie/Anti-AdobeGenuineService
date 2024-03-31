@@ -13,6 +13,8 @@ amongst others.
 
 A simple python code that runs in the background and automatically terminates the annoying adobe genuine alert (`AdobeGCClient.exe`) when opened.
 
+## Execution
+Run the .pyw or .exe file, based on how much you trust me. Both run the same code. 🙂
 
 ## Requirements
 python v3.6+ should work.
