@@ -17,9 +17,9 @@ A simple python code that runs in the background and automatically terminates th
 Run the .pyw or .exe file, based on how much you trust me. Both run the same code. 🙂
 
 ## Requirements
-python v3.6+ should work.
+python v3.4+ should work.
 ```
-pip install psutil WMI
+pip install WMI
 ```
 
 ## Note
