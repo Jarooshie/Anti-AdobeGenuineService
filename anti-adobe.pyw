@@ -8,14 +8,9 @@ listener = c.Win32_Process.watch_for("creation")
 PROCESS_NAME = 'AdobeGCClient.exe'
 
 for proc in psutil.process_iter():
-    if proc.name() == PROCESS_NAME:
-        proc.kill()
+    proc.kill() if proc.name() == PROCESS_NAME else None
         
 while True:
     new_process = listener()
-    for proc in psutil.process_iter():
-        if proc.name() == PROCESS_NAME:
-            proc.kill()
 
-    print(f"New process started: {new_process.Caption}, PID: {new_process.ProcessId}")
-    
+    new_process.Terminate() if new_process.Caption == PROCESS_NAME else None
